@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #000;
+  position: relative;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.red,
+.blue {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+.red {
+  background-color: orangered;
+  bottom: 0;
+  right: 35%;
+}
+.blue {
+  background-color: #3b5998;
+  top: 0;
+  left: 30%;
+}
+.login-container {
+  width: 100%;
+  z-index: 4;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: rgba(43, 40, 40, 0.3);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.textbox {
+  position: relative;
+  margin-bottom: 20px;
+}
+form .textbox label {
+  margin-bottom: 30px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.textbox:nth-child(2) {
+  margin-bottom: 50px;
+}
+.textbox input {
+  width: 100%;
+  padding: 10px;
+  background: rgba(43, 40, 40, 0.3);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  background: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.social-login {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.google-btn,
+.facebook-btn {
+  width: 48%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.google-btn,
+.facebook-btn {
+  background-color: rgba(43, 40, 40, 0.3);
+  color: #fff;
+}
